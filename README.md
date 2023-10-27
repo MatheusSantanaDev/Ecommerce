@@ -25,15 +25,15 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 1. Clone este repositório em sua máquina local:
 
-> git clone https://github.com/seu-u/Ecomerce.git
+> `git clone https://github.com/seu-u/Ecomerce.git`
 
 2. Navegue até o diretório raiz do projeto:
 
-> cd Ecomerce
+> `cd Ecomerce`
 
 3. Execute o Docker Compose para construir e iniciar o aplicativo:
 
-> docker-compose up -d
+> `docker-compose up -d`
 
 4. Acesse o aplicativo no seu navegador em [http://localhost:8080](http://localhost:8080).
 
