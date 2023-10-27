@@ -1,0 +1,47 @@
+# Arquivos temporários
+*~
+*.swp
+
+# Arquivos compilados Java
+target/
+
+# Arquivos gerados pelo IDE
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+
+# Arquivos de compilação
+bin/
+
+# Logs e arquivos de saída
+log/
+logs/
+*.log
+*.log.*
+*.log.1
+
+# Arquivos de configuração
+application.properties
+application.yml
+
+# Dependências e arquivos gerados pelo Maven
+.mvn/
+mvnw
+mvnw.cmd
+mvn-wrapper.properties
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
+dependency-reduced-pom.xml
+mvn-expand.properties
+
+# Arquivos específicos do sistema operacional (Linux)
+.DS_Store
+
+# Arquivos específicos do sistema operacional (Windows)
+Thumbs.db
+ehthumbs.db
+desktop.ini
