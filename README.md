@@ -15,9 +15,9 @@ O E-commerce OKMotoPeças é um projeto de comércio eletrônico construído em 
 
 Certifique-se de ter as seguintes ferramentas instaladas:
 
-- Java Development Kit (JDK) 17 ou superior
+- Java Development Kit (JDK) 11
 - Maven
-- MySQL (ou outro banco de dados de sua escolha)
+- MySQL
 - Docker
 - Docker Compose
 
@@ -25,11 +25,11 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 1. Clone este repositório em sua máquina local:
 
-> `git clone https://github.com/seu-u/Ecomerce.git`
+> `git clone https://github.com/seu-u/Ecommerce.git`
 
 2. Navegue até o diretório raiz do projeto:
 
-> `cd Ecomerce`
+> `cd Ecommerce`
 
 3. Execute o Docker Compose para construir e iniciar o aplicativo:
 
