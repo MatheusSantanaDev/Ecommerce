@@ -1,10 +1,51 @@
+version: '3.7'
+
 services:
-  mysql:
-    image: 'mysql:latest'
-    environment:
-      - 'MYSQL_DATABASE=mydatabase'
-      - 'MYSQL_PASSWORD=secret'
-      - 'MYSQL_ROOT_PASSWORD=verysecret'
-      - 'MYSQL_USER=myuser'
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: springboot
+    container_name: spring-OkMotoPecas
     ports:
-      - '3306'
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_USERNAME: OkMotoPecas
+      SPRING_DATASOURCE_PASSWORD: Motosenhas
+    networks:
+      - Ecommerce-network
+
+  db:
+    image: mysql:5.7
+    container_name: mysql-OkMotoPecas
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "Motosenhas"
+      MYSQL_DATABASE: "ECommerceDataBase"
+    ports:
+      - "3306:3306"
+    volumes:
+      - /mnt/c/Users/atail/Documents/GitHub/Ecomerce/src/main/resources/db:/var/lib/mysql
+    networks:
+      - Ecommerce-network
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: phpmyadmin-OkMotoPecas
+    environment:
+      PMA_HOST: mysql-OkMotoPecas
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - /mnt/c/Users/atail/Documents/GitHub/Ecomerce/src/main/resources/db:/etc/phpmyadmin/config.user.inc.php
+    networks:
+      - Ecommerce-network
+
+networks:
+  Ecommerce-network:
+    driver: bridge
