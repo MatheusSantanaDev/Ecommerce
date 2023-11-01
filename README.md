@@ -15,7 +15,7 @@ O E-commerce OKMotoPeças é um projeto de comércio eletrônico construído em 
 
 Certifique-se de ter as seguintes ferramentas instaladas:
 
-- Java Development Kit (JDK) 11
+- Java Development Kit (JDK) 17
 - Maven
 - MySQL
 - Docker
@@ -35,7 +35,10 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 > `docker-compose up -d`
 
-4. Acesse o aplicativo no seu navegador em [http://localhost:8080](http://localhost:8080).
+4. Acesse as aplicações no seu navegador em:
+
+Aplicaçao: [http://localhost:1000](http://localhost:1000).
+Banco de dados: [http://localhost:8080](http://localhost:8080).
 
 ## Contribuição
 
