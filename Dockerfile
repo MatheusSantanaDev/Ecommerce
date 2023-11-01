@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copie o arquivo JAR da sua aplicação para o contêiner
-COPY target/Ecomerce-0.0.1-SNAPSHOT.jar /app/Ecomerce.jar
+COPY target/Ecommerce-0.0.1-SNAPSHOT.jar /app/Ecommerce.jar
 
 # Expor a porta que sua aplicação Spring Boot está ouvindo
 EXPOSE 8080
 
 # Comando para iniciar a aplicação quando o contêiner for iniciado
-CMD ["java", "-jar", "Ecomerce.jar"]
+CMD ["java", "-jar", "Ecommerce.jar"]

@@ -8,12 +8,12 @@ services:
     image: springboot
     container_name: spring-OkMotoPecas
     ports:
-      - "8080:8080"
+      - "1000:8080"
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_USERNAME: OkMotoPecas
-      SPRING_DATASOURCE_PASSWORD: Motosenhas
+      SPRING_DATASOURCE_USERNAME: okmotopecas
+      SPRING_DATASOURCE_PASSWORD: motosenhas
     networks:
       - Ecommerce-network
 
@@ -22,12 +22,12 @@ services:
     container_name: mysql-OkMotoPecas
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: "Motosenhas"
+      MYSQL_ROOT_PASSWORD: "motosenhas"
       MYSQL_DATABASE: "ECommerceDataBase"
     ports:
       - "3306:3306"
     volumes:
-      - /mnt/c/Users/atail/Documents/GitHub/Ecomerce/src/main/resources/db:/var/lib/mysql
+      - /mnt/c/Users/atail/Documents/GitHub/Ecommerce/src/main/resources/db:/var/lib/mysql
     networks:
       - Ecommerce-network
 
@@ -42,7 +42,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /mnt/c/Users/atail/Documents/GitHub/Ecomerce/src/main/resources/db:/etc/phpmyadmin/config.user.inc.php
+      - /mnt/c/Users/atail/Documents/GitHub/Ecommerce/src/main/resources/db:/etc/phpmyadmin/config.user.inc.php
     networks:
       - Ecommerce-network
 
