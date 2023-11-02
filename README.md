@@ -1,6 +1,6 @@
-# E-commerce OKMotoPeças
+# E-commerce OK Moto Peças
 
-O E-commerce OKMotoPeças é um projeto de comércio eletrônico construído em Java com o uso do framework Spring Boot. Este projeto tem o objetivo de fornecer uma base sólida para o desenvolvimento de uma loja online, incluindo recursos como gerenciamento de produtos, carrinho de compras, autenticação de usuário e integração com um banco de dados MySQL.
+O E-commerce da loja OK Moto Peças é um projeto de comércio eletrônico construído em Java com o uso do framework Spring Boot. Este projeto tem o objetivo de fornecer uma base sólida para o desenvolvimento de uma loja online, incluindo recursos como gerenciamento de produtos, carrinho de compras, autenticação de usuário e integração com um banco de dados MySQL.
 
 ## Recursos
 
@@ -8,7 +8,11 @@ O E-commerce OKMotoPeças é um projeto de comércio eletrônico construído em 
 - Navegação e busca de produtos.
 - Adição de produtos ao carrinho de compras.
 - Finalização de compra.
+- Acesso aos dados do site, mais vendidos, valor total de vendas do mes.
+- Historico de compra do usario.
 - Gerenciamento de produtos no banco de dados.
+- Filtros para busca
+- Adiçao de comentarios e Pontuaçao de itens.
 - Integração com o MySQL para armazenar dados do aplicativo.
 
 ## Pré-requisitos
@@ -38,6 +42,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 4. Acesse as aplicações no seu navegador em:
 
 Aplicaçao: [http://localhost:1000](http://localhost:1000).
+
 Banco de dados: [http://localhost:8080](http://localhost:8080).
 
 ## Contribuição
